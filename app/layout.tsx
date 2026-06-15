@@ -18,7 +18,32 @@ const cormorant = Cormorant_Garamond({
 
 export const metadata: Metadata = {
   title: 'R Studio Nails by Rosibel',
-  description: 'Reserva tu cita de nail art con Rosibel en Puerto Cabello',
+  description: 'Reserva tu cita de nail art con Rosibel en Puerto Cabello, Venezuela. Servicios de uñas en salón y a domicilio.',
+  metadataBase: new URL('https://ross-nails.vercel.app'),
+  openGraph: {
+    title: 'R Studio Nails by Rosibel',
+    description: 'Reserva tu cita de nail art en Puerto Cabello, Venezuela. Servicios en salón y a domicilio.',
+    url: 'https://ross-nails.vercel.app',
+    siteName: 'R Studio Nails by Rosibel',
+    images: [{ url: '/android-chrome-512x512.png', width: 512, height: 512, alt: 'R Studio Nails logo' }],
+    locale: 'es_VE',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary',
+    title: 'R Studio Nails by Rosibel',
+    description: 'Reserva tu cita de nail art en Puerto Cabello, Venezuela.',
+    images: ['/android-chrome-512x512.png'],
+  },
+  icons: {
+    icon: [
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+    ],
+    apple: [{ url: '/apple-touch-icon.png' }],
+  },
+  manifest: '/site.webmanifest',
+  themeColor: '#111418',
 }
 
 export default function RootLayout({
