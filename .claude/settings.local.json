@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:github.com)",
+      "PowerShell(npx impeccable skills install 2>&1)",
+      "PowerShell(git clone https://github.com/pbakaus/impeccable.git \"$env:TEMP\\\\impeccable\" 2>&1)",
+      "WebFetch(domain:api.github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Skill(impeccable)",
+      "Skill(impeccable:*)",
+      "PowerShell(New-Item -ItemType Directory -Force \"c:\\\\Users\\\\jedas\\\\Repos\\\\ross nails\\\\public\")"
+    ]
+  }
+}

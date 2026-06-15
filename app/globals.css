@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Paleta */
+  --c-bg:          #111418;
+  --c-surface:     #1C2127;
+  --c-surface-alt: #2A2E33;
+  --c-brand:       #5A9AB5;
+  --c-brand-soft:  #8BBFD4;
+  --c-ink:         #F0F0F0;
+  --c-muted:       #8A9BAE;
+  --c-blocked-bg:  #2A2E33;
+  --c-blocked-ink: #44505A;
+
+  /* Tipografía */
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-ui:      'Inter', system-ui, sans-serif;
+
+  /* Espaciado (escala 4px) */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+
+  /* Z-index semántico */
+  --z-base:    0;
+  --z-overlay-bg: 40;
+  --z-overlay:    50;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  background: var(--c-bg);
+  color: var(--c-ink);
+  font-family: var(--font-ui);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: rgba(90, 154, 181, 0.3);
+}
+
+/* Horario card hover/active via CSS */
+.horario-card {
+  background: var(--c-surface);
+  border: 1px solid rgba(90, 154, 181, 0.3);
+  transition: background 0.18s ease-out, border-color 0.18s ease-out, transform 0.12s ease-out;
+}
+.horario-card:hover {
+  background: var(--c-brand);
+  border-color: var(--c-brand);
+}
+.horario-card:active {
+  transform: scale(0.97);
+  background: color-mix(in srgb, var(--c-brand) 85%, black);
+}
+@media (prefers-reduced-motion: reduce) {
+  .horario-card {
+    transition: background 0.01s, border-color 0.01s;
+  }
+  .horario-card:active {
+    transform: none;
+  }
+}
