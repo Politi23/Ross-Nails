@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     description: 'Reserva tu cita con Rosibel en Puerto Cabello, Venezuela. Servicios en salón y a domicilio.',
     url: 'https://ross-nails.vercel.app',
     siteName: 'R Studio Nails by Rosibel',
-    images: [{ url: '/android-chrome-512x512.png', width: 512, height: 512, alt: 'R Studio Nails logo' }],
+    images: [{ url: 'https://ross-nails.vercel.app/android-chrome-512x512.png', width: 512, height: 512, alt: 'R Studio Nails logo' }],
     locale: 'es_VE',
     type: 'website',
   },
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     card: 'summary',
     title: 'R Studio Nails by Rosibel',
     description: 'Reserva tu cita de nail art en Puerto Cabello, Venezuela.',
-    images: ['/android-chrome-512x512.png'],
+    images: ['https://ross-nails.vercel.app/android-chrome-512x512.png'],
   },
   icons: {
     icon: [
